@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="@dimen/_5sdp"
+    android:layout_margin="@dimen/_10sdp"
+    android:id="@+id/itemCard"
+    android:outlineAmbientShadowColor="#474747"
+    android:layout_height="@dimen/_100sdp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#EAF8FB"
+        android:orientation="horizontal">
+
+        <CheckBox
+            android:id="@+id/checkBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="false"
+            android:layout_margin="@dimen/_10sdp"/>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_margin="@dimen/_10sdp"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/heading"
+                android:textColor="@color/black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif"
+                android:text="To Do list"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/note"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/black"
+                android:layout_below="@+id/heading"
+                android:fontFamily="sans-serif"
+                android:text="To Do list"
+                android:textSize="15sp" />
+
+            <ImageView
+                android:id="@+id/menu_option"
+                android:layout_width="@dimen/_20sdp"
+                android:layout_alignParentEnd="true"
+                android:layout_height="@dimen/_20sdp"
+                android:src="@drawable/option_icon"/>
+        </RelativeLayout>
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>
